@@ -1,0 +1,20 @@
+本地配置帐号
+$ git config --global user.name "your name"
+$ git config --global user.email "your_email@youremail.com"
+
+生成令牌
+$ ssh-keygen -t rsa -C "your_email@youremail.com"
+
+添加代码仓库
+github.com 新建项目
+git init
+$ git remote add origin git@github.com:yourName/yourRepo.git
+
+下载服务器的最新代码
+git pull “yourRepo.git"
+git pull
+
+同步代码到服务器
+git add -A
+git commit -m '第一次提交'
+git push -u origin master 
